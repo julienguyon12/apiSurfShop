@@ -19,24 +19,21 @@
     },
     "img": {
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "type": "media",
       "multiple": false
-    },
-    "products": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "inversedBy": "cotegories"
     },
     "sub_categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
+      "mappedBy": "cotegories"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
       "mappedBy": "cotegories"
     }
   }

@@ -67,8 +67,9 @@ $RECYCLE.BIN/
 
 .tmp
 *.log
-*.postgres
-
+*.sql
+*.sqlite
+*.sqlite3
 
 
 ############################

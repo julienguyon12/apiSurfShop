@@ -23,10 +23,7 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "img2": {
@@ -34,26 +31,8 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
-    },
-    "price": {
-      "type": "decimal"
-    },
-    "cotegories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::cotegory.cotegory",
-      "mappedBy": "products"
-    },
-    "sub_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::sub-category.sub-category",
-      "inversedBy": "products"
     },
     "isNew": {
       "type": "boolean"
@@ -62,9 +41,24 @@
       "type": "enumeration",
       "enum": [
         "normal",
-        "featured",
-        "trending"
+        "trending",
+        "featured"
       ]
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "products"
+    },
+    "cotegories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cotegory.cotegory",
+      "inversedBy": "products"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
