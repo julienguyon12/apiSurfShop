@@ -43,21 +43,20 @@
     "price": {
       "type": "decimal"
     },
-    "isNew": {
-      "type": "boolean",
-      "default": false
-    },
     "cotegories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::cotegory.cotegory",
-      "inversedBy": "products"
+      "mappedBy": "products"
     },
     "sub_categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
       "inversedBy": "products"
+    },
+    "isNew": {
+      "type": "boolean"
     },
     "type": {
       "type": "enumeration",
