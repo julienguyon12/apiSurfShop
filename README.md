@@ -1,4 +1,45 @@
-# 🚀 Getting started with Strapi
+# MonPetitSurfShop
+
+MonPetitSurfShop is an ecommerce shop where you can buy all type of surfboard.
+
+![MonPetitSurfShop interface](public/MPSS.PNG)
+
+## Main features
+
+- Home page where you can find the category and featured product
+- Category of either shortboard longboard funboard or accessories
+- Product page with all detail of the product
+- Cart where the user can see is shopping items and remove them if needed
+
+## How to use the application?
+
+### Step 1
+
+The user choose a category of product
+
+### Step 2
+
+The user can filter product by sub category and price
+
+### Step 3
+
+Then user can add the article he desire to buy to his cart
+
+## Technical aspects
+
+The web site have a front-end coded with react that you can find in this repository: https://github.com/julienguyon12/clienSurfShop
+The back-end is made with strapi and postgresql.
+
+### Deployment
+
+The application is deployed on render.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
+
+## 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
@@ -35,23 +76,3 @@ yarn build
 ## ⚙️ Deployment
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
